@@ -57,11 +57,28 @@ def demo_stacking():
         1/0
     except Exception as exc:
         logger.exception(exc)
+    print('records')
     print(handler.records)
+    print('messages')
     print(handler.messages)
+
+
+from peewee import *
+
+db = SqliteDatabase('somelogs.db')
+
+class LogEntry(Model):
+    message = CharField()
+    records = CharField()
+    date = DateField()
+    
+    class Meta:
+        database = db
+
+db.connect()
 
 
 if __name__ == '__main__':
     print("Demo for simple stacking logger ")
     demo_stacking()
-    input('Press enter to continue :)')
+    #input('Press enter to continue :)')

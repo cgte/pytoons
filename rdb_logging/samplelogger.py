@@ -1,6 +1,16 @@
 """ Stolen from
 #https://github.com/alistair-broomhead/python-logging-proxy/blob/master/src/python_logging_proxy/handlers.py
 
+http://docs.peewee-orm.com/en/latest/peewee/quickstart.html#quickstart
+
+https://djangostars.com/blog/asynchronous-programming-in-python-asyncio/
+
+
+https://www.fullstackpython.com/postgresql.html
+http://www.postgresqltutorial.com/postgresql-python/
+
+
+SqliteDatabase('somelogs.db')
 """
 
 import logging
